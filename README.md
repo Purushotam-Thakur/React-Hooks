@@ -104,3 +104,24 @@ Hooks don't work inside classes.
 - **Only Call Hooks from React Functions**
     - Call them from within React functional components and not just any regular javascript function.
     
+### useContext 
+- Context provides a way to pass data through the component tree without having to pass props down manually at every level
+
+### useReducer
+- useReducer is a hook that is used for state management
+- It is an alternative of useState 
+- What's the difference??
+    - useState is built using useReducer
+    
+reduce in JavaScript | useReducer in React
+---------------------|--------------------
+array.reduce(reducer, initialValue) | useReducer(reducer, initialValue)
+singleValue = reducer(accumulator, itemValue) | newState=reducer(currentValue,action)
+reduce method return single value | useReducer return a pair of values. [newState, dispatch]
+    
+    
+### Hooks so far
+- useState - state
+- useEffect - side effect
+- useContext - context API
+- useReducer - reducers
