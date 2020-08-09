@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import HeaderNavbar from "./components/common/header-navbar";
-import {Card, Row} from "react-bootstrap";
+import {Card, Row, Container} from "react-bootstrap";
 
 import Home from "./components/home";
 
@@ -14,19 +14,17 @@ function App() {
     return (
         <BrowserRouter>
             <HeaderNavbar/>
-            <Card>
-                <Card.Body>
-                    <Row> &nbsp; </Row>
-                    <Switch>
-                        <Route exact path="/"><Home/></Route>
+            <Container>
+                <Row> &nbsp; </Row>
+                <Switch>
+                    <Route exact path="/"><Home/></Route>
 
-                        <Route path="/state-hook/hook-counter"><HookCounter/></Route>
-                        <Route path="/state-hook/form-on-change"><FormOnChange/></Route>
-                        <Route path="/state-hook/add-items"><AddItems/></Route>
+                    <Route path="/state-hook/hook-counter"><HookCounter/></Route>
+                    <Route path="/state-hook/form-on-change"><FormOnChange/></Route>
+                    <Route path="/state-hook/add-items"><AddItems/></Route>
 
-                    </Switch>
-                </Card.Body>
-            </Card>
+                </Switch>
+            </Container>
         </BrowserRouter>
     );
 }
