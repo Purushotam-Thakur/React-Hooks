@@ -1,3 +1,66 @@
+# React Hooks 
+Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+Ex. State of component.
+Hooks don't work inside classes.
+
+### Why Hooks
+#### Reason Set 1
+- Understanding how this keyword works in javascript
+-  Remember to bind event handles in class components
+- Classes don't minify very well and make hot reloading very unreliable
+#### Reason Set 2
+- There is no particular way to use stateful component logic
+- HOC and render props patterns do address this problem
+- Make the cod harder to follow
+- There is need to share better logic in a better way
+#### Reason Set 3
+- Create components for complex scenarios such as data fetching and subscribing to events.
+- Related code is not organized in one place
+- Ex- Data fetching - in ComponentDidMount and ComponentDidUpdate
+- Ex- Event listeners - in ComponentDidMount and ComponentWillUpdate
+- Because of stateful logic - cannot break components in smaller one
+
+#### Noteworthy Point
+- React version 16.8 or higher
+- Completely opt
+- Hooks don't contain any breaking changes, and the release is 100% backwards-compatibility
+- Classes won't be removed from react
+- Can't use Hooks inside of a class component
+- Hooks don't replace your existing knowledge of React Components
+- Instead, Hooks provide more direct API to the React concept you already know
+    
+### Rules for Hooks
+- **Only Call Hooks at Top Level**
+    - Don't call Hooks inside loops, conditions and nested functions
+- **Only Call Hooks from React Functions**
+    - Call them from within React functional components and not just any regular javascript function.
+    
+### useContext 
+- Context provides a way to pass data through the component tree without having to pass props down manually at every level
+
+### useReducer
+- useReducer is a hook that is used for state management
+- It is an alternative of useState 
+- What's the difference??
+    - useState is built using useReducer
+    
+reduce in JavaScript | useReducer in React
+---------------------|--------------------
+array.reduce(reducer, initialValue) | useReducer(reducer, initialValue)
+singleValue = reducer(accumulator, itemValue) | newState=reducer(currentValue,action)
+reduce method return single value | useReducer return a pair of values. [newState, dispatch]
+    
+    
+### Hooks so far
+- useState - state
+- useEffect - side effect
+- useContext - context API
+- useReducer - reducers
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,62 +129,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
-# React Hooks 
-Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
-Ex. State of component.
-Hooks don't work inside classes.
-
-### Why Hooks
-#### Reason Set 1
-- Understanding how this keyword works in javascript
--  Remember to bind event handles in class components
-- Classes don't minify very well and make hot reloading very unreliable
-#### Reason Set 2
-- There is no particular way to use stateful component logic
-- HOC and render props patterns do address this problem
-- Make the cod harder to follow
-- There is need to share better logic in a better way
-#### Reason Set 3
-- Create components for complex scenarios such as data fetching and subscribing to events.
-- Related code is not organized in one place
-- Ex- Data fetching - in ComponentDidMount and ComponentDidUpdate
-- Ex- Event listeners - in ComponentDidMount and ComponentWillUpdate
-- Because of stateful logic - cannot break components in smaller one
-
-#### Noteworthy Point
-- React version 16.8 or higher
-- Completely opt
-- Hooks don't contain any breaking changes, and the release is 100% backwards-compatibility
-- Classes won't be removed from react
-- Can't use Hooks inside of a class component
-- Hooks don't replace your existing knowledge of React Components
-- Instead, Hooks provide more direct API to the React concept you already know
-    
-### Rules for Hooks
-- **Only Call Hooks at Top Level**
-    - Don't call Hooks inside loops, conditions and nested functions
-- **Only Call Hooks from React Functions**
-    - Call them from within React functional components and not just any regular javascript function.
-    
-### useContext 
-- Context provides a way to pass data through the component tree without having to pass props down manually at every level
-
-### useReducer
-- useReducer is a hook that is used for state management
-- It is an alternative of useState 
-- What's the difference??
-    - useState is built using useReducer
-    
-reduce in JavaScript | useReducer in React
----------------------|--------------------
-array.reduce(reducer, initialValue) | useReducer(reducer, initialValue)
-singleValue = reducer(accumulator, itemValue) | newState=reducer(currentValue,action)
-reduce method return single value | useReducer return a pair of values. [newState, dispatch]
-    
-    
-### Hooks so far
-- useState - state
-- useEffect - side effect
-- useContext - context API
-- useReducer - reducers

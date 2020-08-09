@@ -1,13 +1,13 @@
 import React, { useReducer } from 'react'
 import './App.css'
-import CounterOne from './components/CounterOne'
-import CounterTwo from './components/CounterTwo'
-import CounterThree from './components/CounterThree'
-import ComponentA from './components/ComponentA'
-import ComponentB from './components/ComponentB'
-import ComponentC from './components/ComponentC'
-import DataFetchingOne from './components/DataFetchingOne'
-import DataFetchingTwo from './components/DataFetchingTwo'
+import CounterOne from './CounterOne'
+import CounterTwo from './CounterTwo'
+import CounterThree from './CounterThree'
+import ComponentA from './ComponentA'
+import ComponentB from './ComponentB'
+import ComponentC from './ComponentC'
+import DataFetchingOne from './DataFetchingOne'
+import DataFetchingTwo from './DataFetchingTwo'
 
 const initialState = 0
 const reducer = (state, action) => {
