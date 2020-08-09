@@ -89,7 +89,7 @@ Hooks don't work inside classes.
 - Ex- Event listeners - in ComponentDidMount and ComponentWillUpdate
 - Because of stateful logic - cannot break components in smaller one
 
-####Noteworthy Point
+#### Noteworthy Point
 - React version 16.8 or higher
 - Completely opt
 - Hooks don't contain any breaking changes, and the release is 100% backwards-compatibility
@@ -98,7 +98,7 @@ Hooks don't work inside classes.
 - Hooks don't replace your existing knowledge of React Components
 - Instead, Hooks provide more direct API to the React concept you already know
     
-###Rules for Hooks
+### Rules for Hooks
 - **Only Call Hooks at Top Level**
     - Don't call Hooks inside loops, conditions and nested functions
 - **Only Call Hooks from React Functions**
